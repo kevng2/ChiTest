@@ -1,12 +1,11 @@
 package com.example.chitest;
-
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class ChineseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         chapter1_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, chapter1.class);
+                Intent intent = new Intent(ChineseActivity.this, Chapter1.class);
                 startActivity(intent);
             }
         });
